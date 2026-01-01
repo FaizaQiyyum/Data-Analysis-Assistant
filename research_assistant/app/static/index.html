@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Data Analysis Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Analysis Assistant</h1>
+            <p>Internal Research Tool / Automated Dataset Profiling</p>
+        </header>
+
+        <section id="upload-section" class="upload-area">
+            <h3>Upload Dataset</h3>
+            <p>Select a CSV file for automated validation and analysis.</p>
+            <input type="file" id="csv-file" accept=".csv" class="hidden">
+            <button class="upload-btn" onclick="document.getElementById('csv-file').click()">Select File</button>
+            <div id="file-name" style="margin-top: 10px; font-weight: bold;"></div>
+        </section>
+
+        <div id="loading" class="hidden">Processing dataset and generating visualizations...</div>
+
+        <main id="results-area" class="hidden">
+            <h2 class="section-title">Dataset Health & Summary</h2>
+            <div class="card stats-grid" id="dataset-overview">
+                <!-- Overview stats injected here -->
+            </div>
+
+            <h2 class="section-title">Analytical Narrative</h2>
+            <div class="card">
+                <h3>Observations</h3>
+                <ul id="observations-list" class="summary-list"></ul>
+
+                <h3>Quality Issues</h3>
+                <ul id="quality-list" class="summary-list"></ul>
+
+                <h3>Suggested Next Steps</h3>
+                <ul id="steps-list" class="summary-list"></ul>
+            </div>
+
+            <div id="viz-section" class="hidden">
+                <h2 class="section-title" id="viz-title">Visualizations</h2>
+                <div class="card viz-container" id="viz-container">
+                    <!-- Images injected here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

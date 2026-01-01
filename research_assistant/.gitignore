@@ -1,0 +1,17 @@
+# Environment
+venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Data
+data/single_column_test.csv
+data/sample_research_data.csv
+
+# OS
+.DS_Store
+Thumbs.db
