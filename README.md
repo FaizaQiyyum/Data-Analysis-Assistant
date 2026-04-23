@@ -36,7 +36,7 @@ The code is modularly structured for clarity and maintainability:
    ```
 
 3. **Access the Tool**:
-   Open your browser and navigate to: `http://localhost:8000`
+   Open your browser 
 
 4. **Analyze Data**:
    Upload any structured CSV file to receive an automated profile.
